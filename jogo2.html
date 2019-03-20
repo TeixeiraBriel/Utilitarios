@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <title>Jogo2</title>
+</head>
+
+<body>
+    <div id="menu">
+        <div class="menu-basico">
+            <a class="menu-basico-cabecalho" href="Index.html">Inicio</a>
+
+            <ul class="menu-lista">
+                <li class="menu-item"><a href="horario.html"class="menu-link">Horario</a></li>
+                <li class="menu-item"><a href="Jogo1.html"class="menu-link">Jogo Um</a></li>
+                <li class="menu-item-selecionado"><a href="Jogo2.html"class="menu-link">Jogo Dois</a></li>
+                <li class="menu-item"><a href="testes.html"class="menu-link">Testes</a></li>
+                <li class="menu-item"><a href="Menu.html"class="menu-link">Menu</a></li>
+                    
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+
+        <div id="intro">
+            Raoni é um garoto que tem crescido durante anos sob a tutela de um rei, ninguem sabe ao certo de onde ele veio. Apenas veem e dizem que ele é filho de um grande guerreiro indio que lutou ao lado do rei e trouxe a vitoria aos civilizados. Outros dizem que o Rei matou seu pai e sequestrou o garoto para beneficio propio. Outros contam que o garoto matou seu pai e pediu ao rei que o treinasse e ensina a viver em meio aos civilizados.
+        </div>
+
+        <button onclick="w1()" id="bw1">Pai guerreiro</button>
+        <button onclick="w2()" id="bw2">Rei matou seu pai</button>
+        <button onclick="w3()" id="bw3">Raoni matou seu pai</button>
+
+        <div id="w1" style = "display : none;">
+            Mas Raoni sabia a verdade. Na qual seu pai foi um heroi que salvou todo o reino de civilizados em troca de sua vida. Raoni acabará de completar 18 anos, e nesta idade todos, desde o mais pobre campones ao mais rico nobre devem se juntas ao exercito durante um tempo para um treinamento. Raoni foi se alistar, porem estava em duvida qual clã se identificava mais. Ou ele se juntaria ao clã dos arqueiros, ao clã dos guerreiros ou ao clã de suporte e estrategia.
+        </div>
+
+        <button onclick="w11()" id="bw11" style=" display: none;">Clã dos Arqueiros</button>
+        <button onclick="w12()" id="bw12" style=" display: none;">Clã dos Guerreiros</button>
+        <button onclick="w13()" id="bw13" style=" display: none;">Clã de Suporte</button>
+
+
+        <div id="w2" style = "display : none;">
+            Mas Raoni sabia a verdade. No qual seu pai foi morto pelo rei, e tem vivido todos esses anos com odio. Raoni acabará de completar 18 anos, enfim chegou o dia do tão esperado plano, todos no reino se alistavam no exercito nessa idade, e Raoni via isso como uma oportunidade para fugir das vistas do rei e sumir.Raoni foi se alistar, porem estava em duvida qual clã o ajudaria mais a completar seu plano. Ou ele se juntaria ao clã dos arqueiros, ao clã dos guerreiros ou ao clã de suporte e estrategia.
+        </div>
+
+        <button onclick="w21()" id="bw21" style=" display: none;">Clã dos Arqueiros</button>
+        <button onclick="w22()" id="bw22" style=" display: none;">Clã dos Guerreiros</button>
+        <button onclick="w23()" id="bw23" style=" display: none;">Clã de Suporte</button>
+
+        <div id="w3" style = "display : none;">
+            Mas Raoni sabia a verdade. No qual ele havia matado seu pai, ele odiava os civilizados e acabou matando seu pai de tanto odio ao ver o quanto ele ajudava-os, então Raoni pediu ao rei que o criasse, escondendo o real motivo de se mudar para a capital dos civlizados. Raoni acabará de completar 18 anos, enfim chegou o dia do tão esperado plano, todos no reino se alistavam no exercito nessa idade, e Raoni via isso como uma oportunidade para fugir das vistas do rei e dar inicio ao que planejou por anos.Raoni foi se alistar, porem estava em duvida qual clã o ajudaria mais a completar seu plano. Ou ele se juntaria ao clã dos arqueiros, ao clã dos guerreiros ou ao clã de suporte e estrategia.
+        </div>
+
+        <button onclick="w31()" id="bw31" style=" display: none;">Clã dos Arqueiros</button>
+        <button onclick="w32()" id="bw32" style=" display: none;">Clã dos Guerreiros</button>
+        <button onclick="w33()" id="bw33" style=" display: none;">Clã de Suporte</button>
+        
+
+    
+    
+    </div>
+
+    
+</body>
+
+</html>
+
+<!--Script Parte-->
+
+<script>
+
+    function w1()
+    {
+        var bw11 = document.getElementById("bw11");
+        var bw12 = document.getElementById("bw12");
+        var bw13 = document.getElementById("bw13");
+        var bw2 = document.getElementById("bw2");
+        var bw3 = document.getElementById("bw3");
+        var w1 = document.getElementById("w1");
+
+        bw13.style.display = "block";
+        bw12.style.display = "block";
+        bw11.style.display = "block";
+        bw3.style.display = "none";
+        bw2.style.display = "none";
+        w1.style.display = "block";
+
+    }
+
+    function w2()
+    {
+        var bw21 = document.getElementById("bw21");
+        var bw22 = document.getElementById("bw22");
+        var bw23 = document.getElementById("bw23");
+        var bw1 = document.getElementById("bw1");
+        var bw3 = document.getElementById("bw3");
+        var w2 = document.getElementById("w2");
+
+        bw23.style.display = "block";
+        bw22.style.display = "block";
+        bw21.style.display = "block";
+        bw3.style.display = "none";
+        bw1.style.display = "none";
+        w2.style.display = "block";
+
+    }
+
+    function w3()
+    {
+        var bw31 = document.getElementById("bw31");
+        var bw32 = document.getElementById("bw32");
+        var bw33 = document.getElementById("bw33");
+        var bw2 = document.getElementById("bw2");
+        var bw1 = document.getElementById("bw1");
+        var w3 = document.getElementById("w3");
+
+        bw33.style.display = "block";
+        bw32.style.display = "block";
+        bw31.style.display = "block";
+        bw1.style.display = "none";
+        bw2.style.display = "none";
+        w3.style.display = "block";
+
+    }
+
+</script>
