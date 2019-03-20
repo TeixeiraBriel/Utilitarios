@@ -54,10 +54,43 @@ body {
     border-top: 1px solid #333;
 }
 
+.menu-item-escondido {    
+    list-style: none;
+    position: relative;
+    display: none ; 
+}
+
+.menu-item-escondido {
+    /*display: none;*/
+    padding: .5em 1em;
+}
+
 /* MAIN DIV */
 
 #main {
     position: fixed;
     right: 5px;
     left: 155px;
+}
+
+/* cabeçalho */
+
+#cabecalho {
+    background: #141414;
+    color: #ffffff;    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 150px;
+    height: 34px;
+}
+
+.cabecalho-titulo {
+    font-size: 32px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#main { 
+    top: 50px;
 }
